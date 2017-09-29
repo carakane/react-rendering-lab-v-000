@@ -12,9 +12,9 @@ class Pikachu extends React.Component {
 
   componentDidUpdate(prevProps) {
     if (prevProps.size > this.props.size) {
-      makeSmaller()
+      this.makeSmaller()
     } else if (prevProps.size < this.props.size) {
-      makeBigger()
+      this.makeBigger()
     }
   }
 
